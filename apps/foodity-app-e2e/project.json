@@ -8,12 +8,12 @@
       "executor": "@nrwl/cypress:cypress",
       "options": {
         "cypressConfig": "apps/foodity-app-e2e/cypress.config.ts",
-        "devServerTarget": "foodity-app:serve:development",
+        "devServerTarget": "foodity:serve:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "foodity-app:serve:production"
+          "devServerTarget": "foodity:serve:production"
         }
       }
     },
@@ -26,5 +26,5 @@
     }
   },
   "tags": [],
-  "implicitDependencies": ["foodity-app"]
+  "implicitDependencies": ["foodity"]
 }
