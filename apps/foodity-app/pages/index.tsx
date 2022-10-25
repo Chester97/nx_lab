@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Components } from '@foodity/components';
 
 const StyledPage = styled.div`
   .page {
@@ -20,6 +21,7 @@ export function Index() {
               <span> Hello there, </span>
               Welcome foodity-app 👋
             </h1>
+            <Components />
           </div>
 
           <div id="hero" className="rounded">

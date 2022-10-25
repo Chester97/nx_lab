@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import { Components } from '@foodity/components'
 import './styles.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
@@ -10,6 +11,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       </Head>
       <main className="app">
         <Component {...pageProps} />
+        <Components />
       </main>
     </>
   );
