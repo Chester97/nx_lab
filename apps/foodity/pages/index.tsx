@@ -19,6 +19,7 @@ export function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
+              <span> Hello there NIKE, </span>
               Welcome foodidasdsadasdsadty-app 👋
             </h1>
             <Components />
