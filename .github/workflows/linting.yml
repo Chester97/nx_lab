@@ -1,7 +1,9 @@
 name: CI - Linting
 on:
   pull_request_target:
-    types: [opened, edited]
+    types:
+      - opened
+      - edited
 
 jobs:
   main:
