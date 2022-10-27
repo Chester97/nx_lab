@@ -6,7 +6,7 @@ on:
       - '!main'
 
 jobs:
-  main:
+  Run-Tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,7 +14,5 @@ jobs:
           fetch-depth: 0
       - uses: nrwl/nx-set-shas@v3
       - run: npm ci
-
       - run: npx nx workspace-lint
-      - run: npx nx format:check
       - run: npx nx affected --target=test --parallel=3 --ci --code-coverage

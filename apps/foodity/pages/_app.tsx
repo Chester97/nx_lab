@@ -12,10 +12,6 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <main className="app">
         <Component {...pageProps} />
         <Components />
-        <h1>siema</h1>
-        <h1>siema</h1>
-        <h1>siema</h1>
-        <h1>siema</h1>
       </main>
     </>
   );

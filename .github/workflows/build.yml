@@ -6,7 +6,7 @@ on:
       - '!main'
 
 jobs:
-  main:
+  Run-Build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,5 +16,4 @@ jobs:
       - run: npm ci
 
       - run: npx nx workspace-lint
-      - run: npx nx format:check
       - run: npx nx affected --target=build --parallel=3
