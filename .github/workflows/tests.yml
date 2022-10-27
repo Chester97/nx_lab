@@ -1,4 +1,4 @@
-name: CI
+name: CI - Tests
 on:
   push:
     branches:
@@ -15,6 +15,6 @@ jobs:
       - uses: nrwl/nx-set-shas@v3
       - run: npm ci
 
-      - run: npx nx lint foodity
-      - run: npx nx test foodity
-      - run: npx nx build foodity
+      - run: npx nx workspace-lint
+      - run: npx nx format:check
+      - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
