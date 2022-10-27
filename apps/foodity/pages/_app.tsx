@@ -14,6 +14,8 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <h1>elo?</h1>
         <h1>elo2222?</h1>
         <h1>elo2222?</h1>
+        <h1>elo2222?</h1>
+        <h1>elo2222?</h1>
         <Components />
       </main>
     </>
