@@ -5,15 +5,17 @@ on:
 
 jobs:
   build:
-    if: ${{ github.event.label.name == 'bug' }}
-runs-on: ubuntu-latest
-steps:
-  - uses: actions/checkout@v2
-with:
-fetch-depth: 0
-  - uses: nrwl/nx-set-shas@v3
-  - run: npm ci
+      if: ${{ github.event.label.name == 'bug' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: nrwl/nx-set-shas@v3
+      - run: npm ci
 
-  - run: npx nx lint foodity
-  - run: npx nx test foodity
-  - run: npx nx build foodity
+      - run: npx nx workspace-lint
+      - run: npx nx format:check
+      - run: npx nx affected --target=lint --parallel=3
+      - run: npx nx affected --target=test --parallel=3 --ci --code-coverage
+      - run: npx nx affected --target=build --parallel=3
