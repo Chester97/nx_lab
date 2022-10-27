@@ -1,8 +1,9 @@
 name: CI - Tests
 on:
-  pull_request:
-    types:
-      - opened
+  push:
+    branches:
+      - '*'
+      - '!master'
 
 jobs:
   main:
