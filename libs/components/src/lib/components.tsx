@@ -13,6 +13,7 @@ export function Components(props: ComponentsProps) {
       <h1>Welcome to Just kidding?!</h1>
       <h2>HELLOOOOOO?!??!?!?</h2>
       <h3>test xd</h3>
+      <h3>test development d3</h3>
     </StyledComponents>
   );
 }
