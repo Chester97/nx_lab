@@ -1,12 +1,11 @@
 name: CI
 on:
-  push:
-    branches:
-      - main
   pull_request:
+    types: [ labeled ]
 
 jobs:
-  main:
+  build:
+    if: ${{ github.event.label.name == 'bug' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
