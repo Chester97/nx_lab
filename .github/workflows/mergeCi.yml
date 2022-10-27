@@ -5,7 +5,7 @@ on:
       - closed
 
 jobs:
-  if-merged:
+  Run-Full-Tests:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
