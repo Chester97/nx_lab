@@ -6,6 +6,50 @@ const StyledPage = styled.div`
   }
 `;
 
+// name: CI
+// on:
+//   pull_request:
+//     types: [ labeled ]
+//
+// jobs:
+//   build:
+//     if: ${{ github.event.label.name == 'bug' }}
+// runs-on: ubuntu-latest
+// steps:
+//   - uses: actions/checkout@v2
+// with:
+// fetch-depth: 0
+// - uses: nrwl/nx-set-shas@v3
+// - run: npm ci
+//
+// - run: npx nx lint foodity
+// - run: npx nx test foodity
+// - run: npx nx build foodity
+
+
+// name: CI
+// on:
+//   push:
+//     branches:
+//       - main
+// pull_request:
+//
+//   jobs:
+//     main:
+//       runs-on: ubuntu-latest
+// steps:
+//   - uses: actions/checkout@v2
+// with:
+// fetch-depth: 0
+// - uses: nrwl/nx-set-shas@v3
+// - run: npm ci
+//
+// - run: npx nx lint foodity
+// - run: npx nx test foodity
+// - run: npx nx build foodity
+//
+
+
 export function Index() {
   /*
    * Replace the elements below with your own.

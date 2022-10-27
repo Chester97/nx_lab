@@ -11,6 +11,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       </Head>
       <main className="app">
         <Component {...pageProps} />
+        <h1>elo?</h1>
         <Components />
       </main>
     </>
