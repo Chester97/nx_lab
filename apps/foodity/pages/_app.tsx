@@ -7,7 +7,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to foodity-app!</title>
+        <title>Welcome to fdsadsadsadoodity-app!</title>
       </Head>
       <main className="app">
         <Component {...pageProps} />
