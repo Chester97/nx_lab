@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo "TEST_ENV: $TEST_ENV"
+echo "VERCEL_ENV: $VERCEL_ENV"
 
-if [[ "$TEST_ENV" == "TEST" ]] ; then
+if [[ "$VERCEL_ENV" == "production" ]] ; then
   # Proceed with the build
   echo "✅ - Build can proceed"
   exit 1;
