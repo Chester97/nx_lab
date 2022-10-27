@@ -1,7 +1,9 @@
 name: CI - Tests
 on:
-  pull_request_target:
-    types: [opened, edited]
+  push:
+    branches:
+      - '*'
+      - '!master'
 
 jobs:
   main:
