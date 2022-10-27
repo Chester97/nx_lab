@@ -5,6 +5,6 @@ import Components from './components';
 describe('Components', () => {
   it('should render successfully', () => {
     const { baseElement } = render(<Components />);
-    expect(baseElement).toBeTruthy();
+    expect(baseElement).toBeFalsy();
   });
 });
