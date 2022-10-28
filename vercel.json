@@ -1,5 +1,9 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "rewrites": [
+    {"source": "./apps/foodity", "destination": "http://www.arbi.com.pl/foodity"},
+    {"source": "./libs/components", "destination": "http://www.arbi.com.pl/components"}
+  ]
 }
