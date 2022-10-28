@@ -10,11 +10,7 @@ const StyledComponents = styled.div`
 export function Components(props: ComponentsProps) {
   return (
     <StyledComponents>
-      <h1>Welcome to Just kidding?!</h1>
-      <h2>HELLOOOOOO?!??!?!?</h2>
-      <h3>test xd</h3>
-      <h4>D3 TEST</h4>
-      <h4>D3 TEST</h4>
+      <h1>Arbi project</h1>
     </StyledComponents>
   );
 }
