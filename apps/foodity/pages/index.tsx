@@ -69,6 +69,8 @@ export function Index() {
             </h1>
             <Components />
             test
+            test
+            test
           </div>
 
           <div id="hero" className="rounded">
