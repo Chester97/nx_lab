@@ -11,6 +11,7 @@ export function Components(props: ComponentsProps) {
   return (
     <StyledComponents>
       <h1>Arbi project</h1>
+      <p>Stay tuned guys, new 'game changer' co-founders prepared something REALLY SPECIAL!</p>
     </StyledComponents>
   );
 }
