@@ -12,6 +12,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <main className="app">
         <Component {...pageProps} />
         <Components />
+        <h2>dkfsanlfnlsi</h2>
       </main>
     </>
   );
