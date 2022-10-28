@@ -13,6 +13,7 @@ export function Components(props: ComponentsProps) {
       <h1>Arbi project</h1>
       <p>Stay tuned guys, new 'game changer' co-founders prepared something REALLY SPECIAL!</p>
       <p>staging test</p>
+      <p>staging test</p>
     </StyledComponents>
   );
 }
