@@ -72,7 +72,7 @@ export function Index() {
             test
             test
           </div>
-
+          <h1>STAGING TEST NEXT APP</h1>
           <div id="hero" className="rounded">
             <div className="text-container">
               <h2>
