@@ -13,6 +13,8 @@ function CustomApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
         <Components />
         <h2>dkfsanlfnlsi2</h2>
+        <h2>dkfsanlfnlsi2</h2>
+        <h2>dkfsanlfnlsi2</h2>
       </main>
     </>
   );
