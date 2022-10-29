@@ -68,9 +68,6 @@ export function Index() {
               Welcome foodidasdsadasdsadty-app 👋
             </h1>
             <Components />
-            test
-            test
-            test
           </div>
           <h1>STAGING TEST NEXT APP</h1>
           <div id="hero" className="rounded">
